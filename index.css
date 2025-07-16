@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -82,4 +82,100 @@
     to {
       background-color: rgb(7, 7, 7);
     }
-  }
+  } */
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+
+    .mainDiv {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .colorButton {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .colorButton:active {
+      transform: scale(0.95);
+    }
+
+    #red {
+      background: linear-gradient(to bottom, #ff4d4d, #990000);
+    }
+    #blue {
+      background: linear-gradient(to bottom, #4da6ff, #0059b3);
+    }
+    #green {
+      background: linear-gradient(to bottom, #66ff66, #009933);
+    }
+    #yellow {
+      background: linear-gradient(to bottom, #ffff66, #cccc00);
+    }
+
+    #startButton {
+      padding: 10px 20px;
+      background-color: #00d4ff;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    #startButton:hover {
+      background-color: #00b8e6;
+    }
+
+    #levelDisplay {
+      margin-top: 10px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    @keyframes ajillah1 {
+      0% { background-color: #ff4d4d; }
+      50% { background-color: #660000; }
+      100% { background-color: #ff4d4d; }
+    }
+
+    @keyframes ajillah2 {
+      0% { background-color: #4da6ff; }
+      50% { background-color: #003d66; }
+      100% { background-color: #4da6ff; }
+    }
+
+    @keyframes ajillah3 {
+      0% { background-color: #66ff66; }
+      50% { background-color: #006600; }
+      100% { background-color: #66ff66; }
+    }
+
+    @keyframes ajillah4 {
+      0% { background-color: #ffff66; }
+      50% { background-color: #999900; }
+      100% { background-color: #ffff66; }
+    }
