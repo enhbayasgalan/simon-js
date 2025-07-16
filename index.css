@@ -1,181 +1,222 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Centering */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+
+/* Main Container */
+.mainDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Common Button Styles */
+button {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Color Buttons */
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+/* Start Button Style */
+#startButton {
+  width: 160px;
+  height: 50px;
+  background-color: rgb(97, 210, 248);
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Flash Animations */
+@keyframes flash-red {
+  from { background-color: red; }
+  to { background-color: #1a1a1a; }
+}
+
+@keyframes flash-blue {
+  from { background-color: blue; }
+  to { background-color: #1a1a1a; }
+}
+
+@keyframes flash-green {
+  from { background-color: green; }
+  to { background-color: #1a1a1a; }
+}
+
+@keyframes flash-yellow {
+  from { background-color: yellow; }
+  to { background-color: #1a1a1a; }
+}
+
+
+
+
+
 /* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .mainDiv {
-    width: fit-content;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-  button {
-    width: 150px;
-    height: 150px;
-  }
-  #red {
-    background: red;
-  }
-  #blue {
-    background: blue;
-  }
-  #green {
-    background: green;
-  }
-  #yellow {
-    background: yellow;
-  }
-  #startButton {
-    width: 150px;
-    height: 50px;
-    background: rgb(97, 210, 248);
-    color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: auto;
-  }
-   
-  @keyframes ajillah1 {
-    from {
-      background-color: red;
-    }
-    to {
-      background-color: rgb(4, 4, 4);
-    }
-  }
-   
-  @keyframes ajillah3 {
-    from {
-      background-color: green;
-    }
-    to {
-      background-color: rgb(7, 8, 7);
-    }
-  }
-   
-  @keyframes ajillah2 {
-    from {
-      background-color: blue;
-    }
-    to {
-      background-color: rgb(1, 1, 1);
-    }
-  }
-   
-  @keyframes ajillah4 {
-    from {
-      background-color: yellow;
-    }
-    to {
-      background-color: rgb(7, 7, 7);
-    }
-  } */
- * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-    body {
-      height: 100vh;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: white;
-    }
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
 
-    .mainDiv {
-      display: grid;
-      grid-template-columns: repeat(2, 150px);
-      gap: 30px;
-      margin-bottom: 30px;
-    }
+.mainDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 30px;
+  width: fit-content;
+  display: grid;
+  margin-bottom: 30px;
+}
 
-    .colorButton {
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-      border: none;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
+.colorButton {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
 
-    .colorButton:active {
-      transform: scale(0.95);
-    }
+.colorButton:active {
+  transform: scale(0.95);
+}
 
-    #red {
-      background: linear-gradient(to bottom, #ff4d4d, #990000);
-    }
-    #blue {
-      background: linear-gradient(to bottom, #4da6ff, #0059b3);
-    }
-    #green {
-      background: linear-gradient(to bottom, #66ff66, #009933);
-    }
-    #yellow {
-      background: linear-gradient(to bottom, #ffff66, #cccc00);
-    }
+#red {
+  background: linear-gradient(to bottom, #ff4d4d, #990000);
+}
+#blue {
+  background: linear-gradient(to bottom, #4da6ff, #0059b3);
+}
+#green {
+  background: linear-gradient(to bottom, #66ff66, #009933);
+}
+#yellow {
+  background: linear-gradient(to bottom, #ffff66, #cccc00);
+}
 
-    #startButton {
-      padding: 10px 20px;
-      background-color: #00d4ff;
-      border: none;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s ease;
-      margin-bottom: 10px;
-    }
+#startButton {
+  padding: 10px 20px;
+  background-color: #00d4ff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+}
 
-    #startButton:hover {
-      background-color: #00b8e6;
-    }
+#startButton:hover {
+  background-color: #00b8e6;
+}
 
-    #levelDisplay {
-      margin-top: 10px;
-      font-size: 22px;
-      font-weight: bold;
-    }
+#levelDisplay {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
 
-    @keyframes ajillah1 {
-      0% { background-color: #ff4d4d; }
-      50% { background-color: #660000; }
-      100% { background-color: #ff4d4d; }
-    }
+@keyframes ajillah1 {
+  0% {
+    background-color: #ff4d4d;
+  }
+  50% {
+    background-color: #660000;
+  }
+  100% {
+    background-color: #ff4d4d;
+  }
+}
 
-    @keyframes ajillah2 {
-      0% { background-color: #4da6ff; }
-      50% { background-color: #003d66; }
-      100% { background-color: #4da6ff; }
-    }
+@keyframes ajillah2 {
+  0% {
+    background-color: #4da6ff;
+  }
+  50% {
+    background-color: #003d66;
+  }
+  100% {
+    background-color: #4da6ff;
+  }
+}
 
-    @keyframes ajillah3 {
-      0% { background-color: #66ff66; }
-      50% { background-color: #006600; }
-      100% { background-color: #66ff66; }
-    }
+@keyframes ajillah3 {
+  0% {
+    background-color: #66ff66;
+  }
+  50% {
+    background-color: #006600;
+  }
+  100% {
+    background-color: #66ff66;
+  }
+}
 
-    @keyframes ajillah4 {
-      0% { background-color: #ffff66; }
-      50% { background-color: #999900; }
-      100% { background-color: #ffff66; }
-    }
+@keyframes ajillah4 {
+  0% {
+    background-color: #ffff66;
+  }
+  50% {
+    background-color: #999900;
+  }
+  100% {
+    background-color: #ffff66;
+  }
+} */
